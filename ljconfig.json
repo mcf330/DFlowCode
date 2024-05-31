@@ -1,0 +1,38 @@
+{
+    "batch_size": 128,
+    "num_gpus": 0,
+    "learning_rate": 0.0002,
+    "adam_b1": 0.8,
+    "adam_b2": 0.99,
+    "lr_decay": 0.999,
+    "seed": 1234,
+    "FP16": true,
+
+    "auxiliary_flow_dim": 32,
+    "auxiliary_layers": 8,
+    "primary_flow_dim": 64,
+    "primary_flow_layers":12,
+    "decoder_dim": 32, 
+    "decoder_layers": 3, 
+
+    "segment_size": 8192,
+    "num_mels": 80,
+    "num_freq": 1025,
+    "n_fft": 1024,
+    "hop_size": 256,
+    "win_size": 1024,
+
+    "sampling_rate": 22050,
+
+    "fmin": 0,
+    "fmax": null,
+    "fmax_for_loss": null,
+
+    "num_workers": 4,
+
+    "dist_config": {
+        "dist_backend": "nccl",
+        "dist_url": "tcp://localhost:44321",
+        "world_size": 1
+    }
+}
